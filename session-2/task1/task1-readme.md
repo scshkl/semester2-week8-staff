@@ -14,12 +14,12 @@ The original, single-file student record program, is provided in the repository:
 
 ## Step 1: Create the data structure Header File (structure.h)
 Create a new file named `structure.h` that contains:
+- `#define` statements that specify global values
 - Structure definition
 
 ## Step 2: Create the data structure Header File (student.h)
 Create a new file named `student.h` that contains:
 - Function definitions
-- `#define` statements that specify global values
 
 The header files provide the **interface** to your student record source code without implementation details.
 
