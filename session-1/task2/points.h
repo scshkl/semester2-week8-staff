@@ -3,9 +3,12 @@
 
 typedef struct _point {
     // your code
+    float x, y;
 } Point;
 
 // state function headers here
 
 float distance( Point p, Point q );
+Point reflect(Point q);
+Point shift(Point q, Point dp);
 
