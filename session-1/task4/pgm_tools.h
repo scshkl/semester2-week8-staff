@@ -9,13 +9,13 @@ typedef struct pgm_image{
 } PGMImage;
 
 
-int allocate_image_array(PGMImage *p);
-void free_image_array(PGMImage *p);
+unsigned char ** allocate_image_array(PGMImage p);
+void free_image_array(PGMImage *p, int height);
 PGMImage *read_pgm_image(const char *filename);
 void print_image_info(const char *filename, PGMImage p);
 void print_image_values(PGMImage p);
-unsigned char **invert_image_colors(PGMImage p);
-unsigned char **rotate_image(PGMImage p);
-int save_pgm_image(const char *filename, PGMImage);
+PGMImage *invert_image_colors(PGMImage p);
+PGMImage *rotate_image(PGMImage p, int degrees);
+int save_pgm_image(const char *filename, PGMImage p);
 
 #endif
